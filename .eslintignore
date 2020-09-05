@@ -1,0 +1,18 @@
+node_modules/**
+**/node_modules/**
+public/**
+scripts/**
+assets/**
+build/**
+.tmp/**
+mocks/**
+docs/**
+*.json
+*.md
+*.less
+*.svg
+git
+
+# TODO выпилить как только перепишим все компоненты
+*.js
+*.jsx
