@@ -4,21 +4,26 @@ import { Header } from 'components/Header/Header';
 import { Albums } from 'pages/albums';
 import { Tracks } from 'pages/tracks';
 
+import { StoreProvider } from 'domain/store';
+import { Authentication } from 'components/Authentication/Authentication';
+
 export const App = () => {
     return (
-        <div className="App">
-            <BrowserRouter>
-                <Header />
-                <Switch>
-                    <Route path="/albums">
-                        <Albums />
-                    </Route>
-                    <Route path="/tracks">
-                        <Tracks />
-                    </Route>
-                    <Route path="/">Home</Route>
-                </Switch>
-            </BrowserRouter>
-        </div>
+        <StoreProvider>
+            <Authentication>
+                <BrowserRouter>
+                    <Header/>
+                    <Switch>
+                        <Route path="/albums">
+                            <Albums/>
+                        </Route>
+                        <Route path="/tracks">
+                            <Tracks/>
+                        </Route>
+                        <Route path="/">Home</Route>
+                    </Switch>
+                </BrowserRouter>
+            </Authentication>
+        </StoreProvider>
     );
 };

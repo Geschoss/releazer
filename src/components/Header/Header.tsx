@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './Header.module.css';
 
-export const Header = () => {
+export const Header = memo(() => {
     return (
         <header className={styles.root}>
             <nav>
@@ -27,4 +27,4 @@ export const Header = () => {
             </nav>
         </header>
     );
-};
+});

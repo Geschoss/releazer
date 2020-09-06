@@ -14,7 +14,6 @@ module.exports = {
         "@typescript-eslint/camelcase": 1,
         "@typescript-eslint/no-explicit-any": 0,
         "react/prop-types": 0,
-        "arrow-parens": ["error", "as-needed"],
         "newline-after-var": ["error", "always"],
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-unused-vars": ["error", {

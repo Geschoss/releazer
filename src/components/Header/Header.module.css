@@ -1,6 +1,11 @@
 .root {
-    min-height: 62px;
-    background-color: #24292e;
+    z-index: 32;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: hsla(0,0%,100%,.7);
+    background-color: var(--color-header-background);
+    box-shadow: 0 1px 0 #282828;
 }
 
 .menu {
@@ -10,11 +15,12 @@
 
 .menuItem {
     list-style-type: none;
-    padding: 12px;
+    padding-right: 8px;
 }
 
 .menuLink {
     text-decoration: none;
-    color: white;
+    font-weight: 800;
+    color: #fff;
+    white-space: nowrap;
 }
-
