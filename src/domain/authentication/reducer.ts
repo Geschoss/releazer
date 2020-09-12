@@ -14,7 +14,7 @@ export const authentication = createReducer<AuthenticationStore>(
 
         on(authError, (_, error) => ({ error, status: 'AuthenticatedError' }));
 
-        on(authSuccess, (state, token) => ({ token, status: 'Authenticated' }));
+        on(authSuccess, (_, token) => ({ token, status: 'Authenticated' }));
     },
     { status: 'Entering' }
 );

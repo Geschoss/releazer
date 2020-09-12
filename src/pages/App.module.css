@@ -1,0 +1,7 @@
+.main {
+    position: relative;
+    padding-left: 140px;
+    padding-top: 54px;
+    display: flex;
+    height: 100%;
+}

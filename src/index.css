@@ -3,30 +3,37 @@
 :root {
     --color-header-background: #161616;
     --color-page-background: #ffffff;
+    --color-text-primary: rgba(0, 0, 0, .8);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --color-header-background: #161616;
-    --color-page-background: #1c1c1c;
-  }
+    :root {
+        --color-header-background: #161616;
+        --color-page-background: #1c1c1c;
+    }
 }
 
 html {
-  height: 100%;
-  background-color: var(--color-page-background);
+    height: 100%;
+    background-color: var(--color-page-background);
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+#root {
+    height: 100%;
+    position: relative;
 }
