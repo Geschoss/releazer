@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import { Menu } from 'components/Menu/Menu';
 import { Albums } from 'pages/albums';
 import { Tracks } from 'pages/tracks';
-import { Header } from 'components/Header/Header';
 
 import { StoreProvider } from 'domain/store';
 import { Authentication } from 'components/Authentication/Authentication';
@@ -17,7 +16,6 @@ export const App = () => {
         <StoreProvider>
             <Authentication>
                 <BrowserRouter>
-                    <Header />
                     <motion.main
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -25,10 +23,10 @@ export const App = () => {
                     >
                         <Menu />
                         <Switch>
-                            <Route path="/albums">
+                            <Route path="/releazer/albums">
                                 <Albums />
                             </Route>
-                            <Route path="/tracks">
+                            <Route path="/releazer/tracks">
                                 <Tracks />
                             </Route>
                             <Route path="/">Home</Route>

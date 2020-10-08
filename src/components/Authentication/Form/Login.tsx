@@ -36,6 +36,7 @@ export const Login: React.FC<LoginProps> = ({ submit, loading = false }) => {
 
     return (
         <motion.div
+            drag
             initial="hidden"
             animate="visible"
             variants={variants}
